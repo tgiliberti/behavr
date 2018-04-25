@@ -1,0 +1,11 @@
+<h1>Companies#show</h1>
+<p>Find me in app/views/companies/show.html.erb</p>
+<!-- app/views/restaurants/show.html.erb -->
+<h2><%= @company.name %></h2>
+<p><%= @company.document %></p>
+<p><%= @company.allowed_domains %></p>
+
+<%= link_to "Delete", company_path(@company),
+      method: :delete,
+      data: { confirm: "Are you sure?" } %>
+
