@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @word.name %>
+</p>
+
+<p>
+  <strong>D value:</strong>
+  <%= @word.d_value %>
+</p>
+
+<p>
+  <strong>I value:</strong>
+  <%= @word.i_value %>
+</p>
+
+<p>
+  <strong>S value:</strong>
+  <%= @word.s_value %>
+</p>
+
+<p>
+  <strong>C value:</strong>
+  <%= @word.c_value %>
+</p>
+
+<%= link_to 'Edit', edit_word_path(@word) %> |
+<%= link_to 'Back', words_path %>

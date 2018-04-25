@@ -1,8 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :words
   resources :profiles, only: [:index, :show, :create, :new]
-
-
   resources :companies
 
   devise_for :users
