@@ -1,0 +1,10 @@
+<div class="container">
+  <h1>Profiles</h1>
+  <p>List of all profiles</p>
+
+  <% @profiles.each do |profile| %>
+  <p>
+    <%= link_to profile.user.email, profile_path(profile) %>
+  </p>
+  <% end %>
+</div>

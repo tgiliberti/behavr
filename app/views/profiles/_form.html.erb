@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="form-inputs">
+    <%= simple_form_for @profile do |f| %>
+    <%= f.input :d_value, :label => "Value D", required: true %>
+    <%= f.input :i_value, :label => "Value I", required: true  %>
+    <%= f.input :s_value, :label => "Value S", required: true %>
+    <%= f.input :c_value, :label => "Value C", required: true %>
+    <%= f.association :company, :label => "Select company", required: true %>
+    <div class="form-actions">
+      <%= f.button :submit, "Send", class: "btn-primary" %>
+    </div>
+    <% end %>
+  </div>
+</div>

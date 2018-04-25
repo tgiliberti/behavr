@@ -1,0 +1,9 @@
+<div class="container">
+  <h1><%= @profile.user.email %></h1>
+  <p>D = <%= @profile.d_value %></p>
+  <p>I = <%= @profile.i_value %></p>
+  <p>S = <%= @profile.s_value %></p>
+  <p>C = <%= @profile.c_value %></p>
+  <p>Company = <%= @profile.company.name %></p>
+  <%= link_to "Back", :back  %>
+</div>
